@@ -1,6 +1,19 @@
 import { Link } from 'react-router-dom';
 
 export default function () {
+
+    const styles = {
+        list: {
+            textAlign: "left",
+            marginLeft: "100px"
+        },
+
+        linker: {
+            fontSize: "36px",
+            fontWeight: "800"
+        }
+    }
+
     return(
         <>
             <div>
@@ -16,7 +29,40 @@ export default function () {
                     I enjoy good art and good design which has led me here <br></br>
                     I also have an interest in procedural generation and maps 
                 </p>
-                <Link to="/Home">Home</Link>
+                <Link to="/Home" style={styles.linker}>Home</Link>
+                <h2>Skills</h2>
+                <ul style={styles.list}>
+                    <li>C#</li>
+                    <li>C++</li>
+                    <li>Java</li>
+                    <li>Javascript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>React</li>
+                    <li>Python</li>
+                    <li>GDScript</li>
+                    <li>Unity</li>
+                    <li>Godot</li>
+                    <li>Blender</li>
+                    <li>Photopea</li>
+                    <li>Photoshop</li>
+                    <li>Krita</li>
+                    <li>Figma</li>
+                    <li>Canva</li>
+                    <li>Davinci Resolve</li>
+                    <li>Davinci Fusion</li>
+                    <li>Premiere Pro</li>
+                    <li>After Effects</li>
+                    <li>Adobe Audition</li>
+                    <li>Unreal Engine</li>
+                </ul>
+                <h2>Learning</h2>
+                <ul style={styles.list}>
+                    <li>Nuke</li>
+                    <li>Cinema 4D</li>
+                    <li>Houdini</li>
+                    <li>Susbtance Painter</li>
+                </ul>
             </div>
 
         </>
