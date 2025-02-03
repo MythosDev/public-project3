@@ -17,6 +17,8 @@ export default function () {
                 <Link to="/Resume">Resume</Link>
                 <br />
                 <Link to="/Test">Test</Link>
+                <br />
+                <Link to="/Statistica">Statistica</Link>
             </div>
 
         </>

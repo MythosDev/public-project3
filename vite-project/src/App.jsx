@@ -12,6 +12,7 @@ import NoPage from './pages/NoPage'
 import Test from './pages/Test'
 import Areus from './pages/Areus';
 import Resume from './pages/Resume';
+import Statistica from './pages/Statistica';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path='/Areus' element={<Areus/>}/>
           <Route path='/Resume' element={<Resume/>}/>
           <Route path='/Test' element={<Test/>}/>
+          <Route path='/Statistica' element={<Statistica/>}/>
         </Routes>
       </BrowserRouter>
     </>
