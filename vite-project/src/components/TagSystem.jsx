@@ -21,7 +21,39 @@ const TagSystem = () => {
   };
 
   return (
-    <div style={{ maxWidth: '400px', margin: '0 auto' }}>
+    <div style={{ maxWidth: '400px', margin: '15px auto' }}>
+
+      <form onSubmit={handleAddTag} style={{ display: 'flex', alignItems: 'center' }}>
+        <input
+          type="text"
+          value={inputValue}
+          onChange={handleInputChange}
+          placeholder="Add a tag"
+          style={{
+            padding: '8px',
+            marginRight: '10px',
+            borderRadius: '4px',
+            border: '1px solid #ccc',
+            flex: 1,
+            width: '200px',
+          }}
+        />
+        <button
+          type="submit"
+          style={{
+            padding: '8px 12px',
+            backgroundColor: '#28a745',
+            color: '#fff',
+            border: 'none',
+            borderRadius: '4px',
+            cursor: 'pointer',
+            width: '100px',
+          }}
+        >
+          Add Tag
+        </button>
+      </form>
+
       <div style={{ display: 'flex', flexWrap: 'wrap', marginBottom: '10px' }}>
         {tags.map((tag, index) => (
           <div
@@ -43,35 +75,6 @@ const TagSystem = () => {
           </div>
         ))}
       </div>
-
-      <form onSubmit={handleAddTag} style={{ display: 'flex', alignItems: 'center' }}>
-        <input
-          type="text"
-          value={inputValue}
-          onChange={handleInputChange}
-          placeholder="Add a tag"
-          style={{
-            padding: '8px',
-            marginRight: '10px',
-            borderRadius: '4px',
-            border: '1px solid #ccc',
-            flex: 1,
-          }}
-        />
-        <button
-          type="submit"
-          style={{
-            padding: '8px 12px',
-            backgroundColor: '#28a745',
-            color: '#fff',
-            border: 'none',
-            borderRadius: '4px',
-            cursor: 'pointer',
-          }}
-        >
-          Add Tag
-        </button>
-      </form>
     </div>
   );
 };

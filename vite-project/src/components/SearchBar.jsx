@@ -26,6 +26,8 @@ const SearchBar = ({ onSearch }) => {
           marginRight: '10px',
           borderRadius: '4px',
           border: '1px solid #ccc',
+          flex: 1,
+          width: '200px',
         }}
       />
       <button type="submit" style={{
@@ -34,7 +36,8 @@ const SearchBar = ({ onSearch }) => {
         color: '#fff',
         border: 'none',
         borderRadius: '4px',
-        cursor: 'pointer'
+        cursor: 'pointer',
+        width: '100px',
       }}>
         Search
       </button>

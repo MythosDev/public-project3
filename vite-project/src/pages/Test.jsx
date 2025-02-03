@@ -25,7 +25,6 @@ export default function () {
       <Sidebar />
       <div style={{ marginLeft: '250px', padding: '20px' }}> {/* used to offset for sidebar */}
         <Link to="/Areus">Areus</Link>
-      </div>
       <h1>Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
@@ -38,7 +37,6 @@ export default function () {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <div>
       <h1>Examples</h1>
         <SearchBar onSearch={handleSearch} />
         <TagSystem />
