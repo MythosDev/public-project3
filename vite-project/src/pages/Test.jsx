@@ -9,6 +9,8 @@ import TagSystem from '../components/TagSystem';
 import InfiniteScrollFeed from '../components/InfiniteScroll';
 import PinterestGrid from "../components/PinterestGrid";
 import Sidebar from '../components/SideBar';
+import BottomBar from '../components/BottomBar';
+import { Link } from 'react-router-dom';
 
 export default function () {
   const [count, setCount] = useState(0)
@@ -22,7 +24,7 @@ export default function () {
     <>
       <Sidebar />
       <div style={{ marginLeft: '250px', padding: '20px' }}> {/* used to offset for sidebar */}
-        <a href="./areus/areus.html">Areus</a>
+        <Link to="/Areus">Areus</Link>
       </div>
       <h1>Vite + React</h1>
       <div className="card">
@@ -44,6 +46,7 @@ export default function () {
         <InfiniteScrollFeed /> 
         <PinterestGrid />
         */}
+        <BottomBar/>
       </div>
     </>
   )

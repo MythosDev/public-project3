@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import Modal from '../components/Modal';
 
 export default function () {
+
     return(
         <>
             <div>
@@ -11,7 +14,10 @@ export default function () {
                 <p>Name: ____</p>
                 <Link to="/Home">Home</Link>
             </div>
-
+            <div>
+            <br />
+            <Modal></Modal>
+            </div>
         </>
     )
 }

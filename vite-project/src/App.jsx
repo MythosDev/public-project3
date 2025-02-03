@@ -10,6 +10,8 @@ import Contacts from './pages/Contacts'
 import About from './pages/About'
 import NoPage from './pages/NoPage'
 import Test from './pages/Test'
+import Areus from './pages/Areus';
+import Resume from './pages/Resume';
 
 
 function App() {
@@ -24,6 +26,9 @@ function App() {
           <Route path='/Portfolio' element={<Portfolio/>}/>
           <Route path='/Contacts' element={<Contacts/>}/>
           <Route path='/About' element={<About/>}/>
+          <Route path='/Areus' element={<Areus/>}/>
+          <Route path='/Resume' element={<Resume/>}/>
+          <Route path='/Test' element={<Test/>}/>
         </Routes>
       </BrowserRouter>
     </>
