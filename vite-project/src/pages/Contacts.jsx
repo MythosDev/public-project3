@@ -17,6 +17,14 @@ export default function () {
             // transform: "scaleX(1.5)"
             transform: "translate(-750px, 100px)"
         },
+        BigText: {
+            fontSize: "200px",
+            fontWeight: "800",
+            fontFamily: "'Eurostile', sans-serif",
+            position: "fixed",
+            transform: "scaleY(1.5) translate(-625px, -600px)",
+            opacity: '0.9',
+        },
         SmallWatermark:{
             position: "fixed",
             transform: "translate(-915px, -575px)",
@@ -45,6 +53,9 @@ export default function () {
             </div>
             <img style={styles.SmallWatermark} src={BlackEagleIcon}/>
             <img style={styles.BigWatermark} src={BlackEagleIcon}/>
+            <div style={styles.BigText}>
+                <h2>Contact</h2>
+            </div>
             <div style={styles.CornerText}>
                 <h2>Welcome</h2>
             </div>

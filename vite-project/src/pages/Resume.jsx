@@ -2,6 +2,10 @@ import { Link } from 'react-router-dom';
 import React from 'react';
 import BottomBar from '../components/BottomBar';
 
+//get rid of this compenent here it is not needed
+//iclude download PDF button for resume
+
+
 export default function () {
     return(
         <>

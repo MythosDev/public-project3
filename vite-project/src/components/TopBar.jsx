@@ -8,8 +8,8 @@ const TopBar = () => {
       <div style={styles.navItems}>
         <Link to="/" style={styles.navLink}>Home</Link>
         <Link to="/about" style={styles.navLink}>About</Link>
-        <Link to="/services" style={styles.navLink}>Services</Link>
-        <Link to="/contact" style={styles.navLink}>Contact</Link>
+        <Link to="/resume" style={styles.navLink}>Services</Link>
+        <Link to="/contacts" style={styles.navLink}>Contact</Link>
       </div>
     </div>
   );

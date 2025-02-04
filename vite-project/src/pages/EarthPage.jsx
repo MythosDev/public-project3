@@ -4,6 +4,7 @@ import { Canvas } from '@react-three/fiber';
 import {Environment, OrbitControls } from '@react-three/drei'
 import Earth from '../../public/Earth.jsx'
 import TopBar from '../components/TopBar.jsx';
+import PanelOverlay from '../components/PanelOverlay.jsx';
 // import { ambientLight } from '@react-three/fiber';
 
 export default function () {
@@ -28,6 +29,7 @@ export default function () {
         <>
             {/* <Link to="/Home">Home</Link> */}
             <TopBar />
+            <PanelOverlay />
             <div style={styles.body}>
                 <Canvas>
                     <ambientLight intensity={1.5}/>

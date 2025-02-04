@@ -118,6 +118,8 @@ export default function () {
                     <li>Exxcel</li>
                     <li>Microsoft Office</li>
                     <li>QT Designer</li>
+                    <li>Speak French/English</li>
+                    <li>American/Canadian Citizenship</li>
                 </ul>
                 <h2>API'S</h2>
                 <h2>Learning</h2>
