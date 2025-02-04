@@ -14,6 +14,53 @@ Old retro text
 Scan line
 black and white noise effect
 
+Collage background images flickering between each other like: 
+https://www.youtube.com/watch?v=0xczRBwcy5o&ab_channel=Windows96
+
+watermark in corner
+
+frutiger aero page
+retro 80s page
+pixelated comfort page (90s DOS)
+Classical Wedding page
+Underground metal page
+Gothic page
+Artistic page
+3D page
+Futuristic Minimalist page
+old seaside page
+medieval page
+early internet ASCII page
+AI ASCII page
+Oldschool prerendered 3D model interactive page
+
+-----------------------------------------------------------------------------------
+GAIA
+
+3D https://www.youtube.com/watch?v=M5nt1GamB_g
+
+canvas - 100vh !important
+<canvas>
+    <ambient light intensity={}>
+    <orbit controls>
+    <suspense fallback={null}>
+        <earth>
+    <environment preset='sunset'>
+
+body - background color
+
+InfoPanel.jsx
+Timeline.jsx
+Borders API
+Earth API
+Earth model
+    Earth.jsx - watch tutorial for proper import
+2D/3D
+Blog
+Github Repo
+GOOGLE API has FREE Tier for non STREET VIEW globe
+ARCGIS online ???
+-----------------------------------------------------------------------------------
 
 Statistica
     On Right Hand side

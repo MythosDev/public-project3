@@ -4,6 +4,7 @@ import DitherOverlay from '../components/DitherOverlay';
 import BlackAndWhiteOverlay from '../components/BlackAndWhiteOverlay';
 import BackgroundText from "../components/BackgroundText";
 import DVDLogo from '../components/DVDLogo';
+import BlackEagleIcon from '../assets/BlackEagleIcon.png'
 
 export default function () {
 
@@ -14,7 +15,21 @@ export default function () {
             fontFamily: "'Eurostile', sans-serif",
             position: "fixed",
             // transform: "scaleX(1.5)"
-            transform: "translate(-500px, 100px)"
+            transform: "translate(-750px, 100px)"
+        },
+        SmallWatermark:{
+            position: "fixed",
+            transform: "translate(-915px, -575px)",
+            width: '100px',
+            zIndex: '5',
+            opacity: '0.05',
+        },
+        BigWatermark:{
+            position: "fixed",
+            transform: "translate(0px, -900px)",
+            width: '1250px',
+            zIndex: '-5',
+            opacity: '0.05',
         },
     };
 
@@ -28,6 +43,8 @@ export default function () {
                 <p>Youtube: ___</p>
                 <Link to="/Home">Home</Link>
             </div>
+            <img style={styles.SmallWatermark} src={BlackEagleIcon}/>
+            <img style={styles.BigWatermark} src={BlackEagleIcon}/>
             <div style={styles.CornerText}>
                 <h2>Welcome</h2>
             </div>
