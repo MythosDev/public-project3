@@ -12,13 +12,13 @@ export default function () {
                 <br />
                 <Link to="/About">About</Link>
                 <br />
-                <Link to="/Areus">Areus</Link>
-                <br />
                 <Link to="/Resume">Resume</Link>
                 <br />
                 <Link to="/Test">Test</Link>
                 <br />
                 <Link to="/Statistica">Statistica</Link>
+                <br />
+                <Link to="/Areus">Areus</Link>
                 <br />
                 <Link to="/News">News</Link>
             </div>
