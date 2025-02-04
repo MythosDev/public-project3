@@ -9,6 +9,7 @@ import Bar from '../components/Bar';
 import AreusWoman from '../assets/AreusWoman.png'
 import AreusMan from '../assets/AreusMan.png'
 import AreusBook from '../assets/AreusBook.jpg'
+import Gate from '../components/Gate';
 
 export default function () {
     return(
@@ -129,7 +130,8 @@ export default function () {
             }
             `}
             </style>
-        
+            
+            <Gate />
             <article>
                 {/* <TopBar /> */}
                 <Bar/>

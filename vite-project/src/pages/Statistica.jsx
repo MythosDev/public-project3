@@ -4,6 +4,7 @@ import MultiDropZone from '../components/MultiDropZone'
 import SearchBarList from '../components/SearchBarList'
 import SimpleTagSystem from '../components/SimpleTagSystem'
 import ChartComponent from '../components/ChartComponent'
+import Gate from '../components/Gate'
 
 
 export default function () {
@@ -81,6 +82,7 @@ export default function () {
 
     return (
         <>
+            <Gate />
             <div>
                 <Dropzone />
                 <br />

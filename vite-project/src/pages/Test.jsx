@@ -25,14 +25,11 @@ export default function () {
       <Sidebar />
       <div style={{ marginLeft: '250px', padding: '20px' }}> {/* used to offset for sidebar */}
         <Link to="/Areus">Areus</Link>
-      <h1>Vite + React</h1>
+      <h1>Testing Page</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more

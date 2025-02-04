@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 
 export default function () {
+
     return(
         <>
             <div>
@@ -21,6 +22,7 @@ export default function () {
                 <Link to="/Areus">Areus</Link>
                 <br />
                 <Link to="/News">News</Link>
+                <br />
             </div>
 
         </>

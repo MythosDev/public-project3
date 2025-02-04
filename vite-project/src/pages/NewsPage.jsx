@@ -1,10 +1,12 @@
 import React from "react";
 import TopBar from "../components/TopBar";
 import NewsRow from "../components/NewsRow";
+import Gate from "../components/Gate";
 
 const NewsPage = () => {
   return (
     <div>
+      <Gate />
       <TopBar />
 
         <div style={{marginTop: '0px'}}>
