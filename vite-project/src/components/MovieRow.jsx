@@ -32,7 +32,8 @@ const MovieRow = ({ movies = [] }) => {  // Default parameter for movies
 // Inline Styles
 const styles = {
   movieRow: {
-    display: "flex",
+    display: 'flex',
+    justifyContent: "center",
     gap: "16px",
     // overflow: "hidden",
     // overflowX: "scroll", // Horizontal scroll for smaller screens
