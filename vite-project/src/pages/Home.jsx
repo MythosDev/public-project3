@@ -23,6 +23,8 @@ export default function () {
                 <br />
                 <Link to="/News">News</Link>
                 <br />
+                <Link to="/Earth">Earth</Link>
+                <br />
             </div>
 
         </>

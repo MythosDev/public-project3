@@ -14,6 +14,7 @@ import Areus from './pages/Areus';
 import Resume from './pages/Resume';
 import Statistica from './pages/Statistica';
 import NewsPage from './pages/NewsPage';
+import EarthPage from './pages/EarthPage';
 
 
 function App() {
@@ -33,7 +34,7 @@ function App() {
           <Route path='/Test' element={<Test/>}/>
           <Route path='/Statistica' element={<Statistica/>}/>
           <Route path='/News' element={<NewsPage/>}/>
-          
+          <Route path='/Earth' element={<EarthPage/>}/>
         </Routes>
       </BrowserRouter>
     </>

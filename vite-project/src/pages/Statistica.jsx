@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import Dropzone from '../components/DropZone'
 import MultiDropZone from '../components/MultiDropZone'
 import SearchBarList from '../components/SearchBarList'
@@ -83,7 +84,11 @@ export default function () {
     return (
         <>
             <Gate />
+            <Link to="/Home">Home</Link>
+            <br />
+            <br />
             <div>
+                <h1>Statistica</h1>
                 <Dropzone />
                 <br />
                 <MultiDropZone />

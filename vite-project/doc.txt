@@ -39,15 +39,7 @@ GAIA
 
 3D https://www.youtube.com/watch?v=M5nt1GamB_g
 
-canvas - 100vh !important
-<canvas>
-    <ambient light intensity={}>
-    <orbit controls>
-    <suspense fallback={null}>
-        <earth>
-    <environment preset='sunset'>
-
-body - background color
+Minimum zoom distance, dynamic sensitivity based on zoom, 
 
 InfoPanel.jsx
 Timeline.jsx
