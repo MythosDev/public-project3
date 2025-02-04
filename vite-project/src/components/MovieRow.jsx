@@ -34,8 +34,8 @@ const styles = {
   movieRow: {
     display: "flex",
     gap: "16px",
-    overflow: "hidden",
-    overflowX: "scroll", // Horizontal scroll for smaller screens
+    // overflow: "hidden",
+    // overflowX: "scroll", // Horizontal scroll for smaller screens
     padding: "16px",
   },
   movie: {

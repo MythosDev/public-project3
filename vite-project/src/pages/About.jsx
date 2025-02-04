@@ -17,11 +17,14 @@ export default function () {
     }
 
     const customMovies = [
-        { id: 1, title: "The Matrix", poster: PosterImage },
-        { id: 2, title: "Avatar", poster: PosterImage },
-        { id: 3, title: "The Avengers", poster: PosterImage },
-        { id: 4, title: "Titanic", poster: PosterImage },
-        { id: 5, title: "Spider-Man", poster: PosterImage },
+        { id: 1, title: "C#", poster: PosterImage },
+        { id: 2, title: "React", poster: PosterImage },
+        { id: 3, title: "Javascript", poster: PosterImage },
+        { id: 4, title: "Java", poster: PosterImage },
+        { id: 5, title: "Python", poster: PosterImage },
+        { id: 6, title: "HTML", poster: PosterImage },
+        { id: 7, title: "CSS", poster: PosterImage },
+        { id: 8, title: "GDScript", poster: PosterImage },
       ];
 
     return(
