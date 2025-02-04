@@ -6,6 +6,10 @@ import MovieRow from '../components/MovieRow';
 import TopBar from '../components/TopBar';
 import Bar from '../components/Bar';
 
+import AreusWoman from '../assets/AreusWoman.png'
+import AreusMan from '../assets/AreusMan.png'
+import AreusBook from '../assets/AreusBook.jpg'
+
 export default function () {
     return(
         <>
@@ -144,18 +148,18 @@ export default function () {
                 Muting the natural consequences only serves to prop up the industry. Held in overt sexual slavery, isolated and abused into the industry, preyed on by predators into the industry, groomed by society at a young age, soulless psychopaths looking for profit.
                 The psychopaths advertise the industry because it makes them money and they help isolate the victims. They could have been victims at one point but are now victimizers.
                 </p>
-                <img src="./GevZQJHXYAAsjq7.jpg" alt="Image" />
+                <img src={AreusBook} alt="Image" />
                 <p>
                 You can never reform from being a porn distributor, You can never reform from being an enabler of exploitation, only victims can truly be saved. There are a plethora of girls that were coerced into the industry at a young age, either via economic means, emotional abuse, grooming, etc.
                 They don't deserve to be shunned for being born into it. They offer a ___ perspective that is needed. I doubt the others that reform into ____.
                 </p>
-                <img src="./eyes.png" alt="Eyes" className="borderless-image" />
+                <img src={AreusMan} alt="Eyes" className="borderless-image" />
                 <h2>Why do they care about your data?</h2>
                 <p>
                 Pornhub releases data yearly going over a plethora of user statistics, most common categories, most common pornstars, etc. But, have you ever wondered why a company that allows child pornography to slip through their moderation would be so focused on statistics?
                 Going so far as to publicly categorize it all for the world to see? Organized into neat infographics that could be shared anywhere? Me neither.
                 </p>
-                <img src="./Mask group (3).png" alt="Mask group" className="borderless-image" />
+                <img src={AreusWoman} alt="Mask group" className="borderless-image" />
                 <h3>
                     William Busch - 2024
                 </h3>

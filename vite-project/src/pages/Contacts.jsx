@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import BottomBar from '../components/BottomBar';
+import DitherOverlay from '../components/DitherOverlay';
+import BlackAndWhiteOverlay from '../components/BlackAndWhiteOverlay';
 
 export default function () {
 
@@ -69,7 +71,8 @@ export default function () {
                 </h2>
             </div>
             <BottomBar/>
-
+            {/* <DitherOverlay /> */}
+            <BlackAndWhiteOverlay />
         </>
     )
 }

@@ -1,19 +1,9 @@
 import React from "react";
+import PropTypes from "prop-types";
 import PosterImage from '../assets/202648-ki-or-breathing-0-1000-0-1500-crop.jpg';
 
 // MovieRow Component
-const MovieRow = () => {
-  // Sample movie data (replace with an API fetch if needed)
-  const movies = [
-    { id: 1, title: "Inception", poster: PosterImage },
-    { id: 2, title: "Interstellar", poster: PosterImage },
-    { id: 3, title: "The Dark Knight", poster: PosterImage },
-    { id: 4, title: "The Dark Knight", poster: PosterImage },
-    { id: 5, title: "The Dark Knight", poster: PosterImage },
-    { id: 6, title: "The Dark Knight", poster: PosterImage },
-  ];
-
-  // Component Render
+const MovieRow = ({ movies }) => {
   return (
     <div style={styles.movieRow}>
       {movies.map((movie) => (
@@ -48,6 +38,29 @@ const styles = {
     fontSize: "16px",
     fontWeight: "bold",
   },
+};
+
+// Default Movies (used if no movies prop is passed)
+MovieRow.defaultProps = {
+  movies: [
+    { id: 1, title: "Inception", poster: PosterImage },
+    { id: 2, title: "Interstellar", poster: PosterImage },
+    { id: 3, title: "The Dark Knight", poster: PosterImage },
+    { id: 4, title: "Inception", poster: PosterImage },
+    { id: 5, title: "Interstellar", poster: PosterImage },
+    { id: 6, title: "The Dark Knight", poster: PosterImage },
+  ],
+};
+
+// PropTypes for validation
+MovieRow.propTypes = {
+  movies: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      title: PropTypes.string.isRequired,
+      poster: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 };
 
 export default MovieRow;

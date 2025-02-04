@@ -1,0 +1,32 @@
+
+Scrolling text with my name
+underground text font
+futuristic feeling
+based off the album cover Art
+ASCII / 3D model of a head
+Ocean Ripple Effect
+Dithering Effect
+
+Night Time feel with black borders
+Cromatic Abberation
+Bloom
+Old retro text
+Scan line
+black and white noise effect
+
+
+Statistica
+    On Right Hand side
+        Manage Datasets
+        Search Datasets
+    Middle
+        Top Information Bar 
+        filter graphs by keywords
+        generated graphs 
+        export
+        details
+    Blog
+        Goes over recent demographic Data
+        Explains methodology for collection
+        Top Bar - Title - Author/Date - sources
+        content - inline graphs, images, text, tables

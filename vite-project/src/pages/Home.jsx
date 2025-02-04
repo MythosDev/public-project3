@@ -19,6 +19,8 @@ export default function () {
                 <Link to="/Test">Test</Link>
                 <br />
                 <Link to="/Statistica">Statistica</Link>
+                <br />
+                <Link to="/News">News</Link>
             </div>
 
         </>

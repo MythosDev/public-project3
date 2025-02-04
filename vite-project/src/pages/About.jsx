@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+import MovieRow from '../components/MovieRow';
+import PosterImage from '../assets/202648-ki-or-breathing-0-1000-0-1500-crop.jpg';
 
 export default function () {
 
@@ -13,6 +15,14 @@ export default function () {
             fontWeight: "800"
         }
     }
+
+    const customMovies = [
+        { id: 1, title: "The Matrix", poster: PosterImage },
+        { id: 2, title: "Avatar", poster: PosterImage },
+        { id: 3, title: "The Avengers", poster: PosterImage },
+        { id: 4, title: "Titanic", poster: PosterImage },
+        { id: 5, title: "Spider-Man", poster: PosterImage },
+      ];
 
     return(
         <>
@@ -31,6 +41,7 @@ export default function () {
                 </p>
                 <Link to="/Home" style={styles.linker}>Home</Link>
                 <h2>Skills</h2>
+                <MovieRow movies={customMovies}/>
                 <ul style={styles.list}>
                     <li>C#</li>
                     <li>C++</li>

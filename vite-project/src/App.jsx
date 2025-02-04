@@ -13,6 +13,7 @@ import Test from './pages/Test'
 import Areus from './pages/Areus';
 import Resume from './pages/Resume';
 import Statistica from './pages/Statistica';
+import NewsPage from './pages/NewsPage';
 
 
 function App() {
@@ -31,6 +32,8 @@ function App() {
           <Route path='/Resume' element={<Resume/>}/>
           <Route path='/Test' element={<Test/>}/>
           <Route path='/Statistica' element={<Statistica/>}/>
+          <Route path='/News' element={<NewsPage/>}/>
+          
         </Routes>
       </BrowserRouter>
     </>
