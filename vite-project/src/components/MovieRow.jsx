@@ -3,10 +3,23 @@ import PropTypes from "prop-types";
 import PosterImage from '../assets/202648-ki-or-breathing-0-1000-0-1500-crop.jpg';
 
 // MovieRow Component
-const MovieRow = ({ movies }) => {
+const MovieRow = ({ movies = [] }) => {  // Default parameter for movies
+  // Default Movies (used if no movies prop is passed)
+  const defaultMovies = [
+    { id: 1, title: "Inception", poster: PosterImage },
+    { id: 2, title: "Interstellar", poster: PosterImage },
+    { id: 3, title: "The Dark Knight", poster: PosterImage },
+    { id: 4, title: "Inception", poster: PosterImage },
+    { id: 5, title: "Interstellar", poster: PosterImage },
+    { id: 6, title: "The Dark Knight", poster: PosterImage },
+  ];
+
+  // Use passed movies or fallback to defaultMovies
+  const movieList = movies.length > 0 ? movies : defaultMovies;
+
   return (
     <div style={styles.movieRow}>
-      {movies.map((movie) => (
+      {movieList.map((movie) => (
         <div key={movie.id} style={styles.movie}>
           <img src={movie.poster} alt={movie.title} style={styles.poster} />
           <p style={styles.title}>{movie.title}</p>
@@ -40,18 +53,6 @@ const styles = {
   },
 };
 
-// Default Movies (used if no movies prop is passed)
-MovieRow.defaultProps = {
-  movies: [
-    { id: 1, title: "Inception", poster: PosterImage },
-    { id: 2, title: "Interstellar", poster: PosterImage },
-    { id: 3, title: "The Dark Knight", poster: PosterImage },
-    { id: 4, title: "Inception", poster: PosterImage },
-    { id: 5, title: "Interstellar", poster: PosterImage },
-    { id: 6, title: "The Dark Knight", poster: PosterImage },
-  ],
-};
-
 // PropTypes for validation
 MovieRow.propTypes = {
   movies: PropTypes.arrayOf(
@@ -60,7 +61,7 @@ MovieRow.propTypes = {
       title: PropTypes.string.isRequired,
       poster: PropTypes.string.isRequired,
     })
-  ).isRequired,
+  ),
 };
 
 export default MovieRow;
