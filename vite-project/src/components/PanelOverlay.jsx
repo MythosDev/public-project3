@@ -23,8 +23,23 @@ export default function PanelOverlay() {
     return (
         
         <div style={styles.overlay}>
-            <h2>Panel Title</h2>
-            <p>This is an example of a panel overlay at the center-left of the screen.</p>
+            <h2>Carthage</h2>
+            <p>
+                Carthage 814bc - 146ac was the center of the punic empire. 
+                A pheonician settlement founded after princess
+                Dido was exiled from Tyre.
+                It is most well known for its conflict with Rome.
+                <br />
+                <br />
+                Maps: 
+                <br />
+                First Punic War,
+                Second Punic War,   
+                Third Punic War,
+                Hannibal, 
+                Voyage,
+                Hanno,             
+            </p>
             <Link to="/Home">Home</Link>
         </div>
     );

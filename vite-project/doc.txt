@@ -54,6 +54,32 @@ GOOGLE API has FREE Tier for non STREET VIEW globe
 ARCGIS online ???
 -----------------------------------------------------------------------------------
 
+<Suspense></suspense>
+Hides content while it loads
+https://react.dev/reference/react/Suspense
+
+Return to the land, buildr introduction manual, pricing models,
+netflix clone: search, tile results, row, big ad screen, horizontal big ad, bottom bar, curtains, background effect, 3D disk model
+
+https://github.com/vasturiano/react-globe.gl
+
+Aryan.org: illustration of where white people are in the world, total population, historyical travel arrows, 
+
+MAPS:
+European Expansion
+English Borders
+American Colonization
+European Borders
+White Borders
+Indigenous Borders
+Rome
+Islamic Conquests
+South America history
+
+FIGMA
+
+
+
 Statistica
     On Right Hand side
         Manage Datasets

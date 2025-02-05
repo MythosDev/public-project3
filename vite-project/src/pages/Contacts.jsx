@@ -54,8 +54,17 @@ export default function () {
             <img style={styles.SmallWatermark} src={BlackEagleIcon}/>
             <img style={styles.BigWatermark} src={BlackEagleIcon}/>
             <div style={styles.BigText}>
-                <h2>Contact</h2>
+                <h2><Link to="/Home">Contact</Link></h2>
             </div>
+            <svg width="500px" height="200px">
+                <defs>
+                    <filter id="blur">
+                        <feGaussianBlur stdDeviation="5" />
+                    </filter>
+                </defs>
+                <circle cx="100" cy="100" r="50" fill="green" filter="url(#blur)" ></circle>
+                <circle cx="220" cy="100" r="50" fill="red"></circle>
+            </svg>
             <div style={styles.CornerText}>
                 <h2>Welcome</h2>
             </div>

@@ -122,6 +122,11 @@ export default function () {
                     <li>American/Canadian Citizenship</li>
                 </ul>
                 <h2>API'S</h2>
+                <p>
+                    tailwind, scss, vite, typescript, docker, postgres, mysql, sqllite, 
+                    redis, stripe, graphql, threejs, NodeJS, Neovim, firebase, flutter, 
+                    react native, Julia, Linux, Git, OpenGL, Vulkan, 
+                </p>
                 <h2>Learning</h2>
                 <ul style={styles.list}>
                     <li>Nuke</li>
