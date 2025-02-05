@@ -9,6 +9,11 @@ import Python from 'programming-languages-logos/src/python/python.png'
 import HTML from 'programming-languages-logos/src/html/html.png'
 import CSS from 'programming-languages-logos/src/css/css.png'
 import PosterImage from '../assets/202648-ki-or-breathing-0-1000-0-1500-crop.jpg';
+import Cplusplus from '../assets/c++.png';
+import ReactIcon from '../assets/react.png';
+import GodotIcon from '../assets/godot_icon.svg'
+import HLSLIcon from '../assets/hlsl.png'
+import BloomOverlay from '../components/BloomOverlay';
 
 export default function () {
 
@@ -42,17 +47,19 @@ export default function () {
         },
     }
 
-    const customMovies = [
+    const customMovies1 = [
         { id: 1, title: "C#", poster: CSharp },
         { id: 2, title: "Javascript", poster: Javascript },
-        { id: 3, title: "React", poster: PosterImage },
+        { id: 3, title: "React", poster: ReactIcon },
         { id: 4, title: "Java", poster: Java },
         { id: 5, title: "Python", poster: Python },
+    ];
+    const customMovies2 = [
         { id: 6, title: "HTML", poster: HTML },
         { id: 7, title: "CSS", poster: CSS },
-        { id: 8, title: "GDScript", poster: PosterImage },
-        { id: 9, title: "C++", poster: PosterImage },
-        { id: 10, title: "HLSL", poster: PosterImage },
+        { id: 8, title: "GDScript", poster: GodotIcon },
+        { id: 9, title: "C++", poster: Cplusplus },
+        { id: 10, title: "HLSL", poster: HLSLIcon },
       ];
 
     return(
@@ -95,7 +102,8 @@ export default function () {
                     </p>
                 </div>
                 <h2>Languages</h2>
-                <MovieRow movies={customMovies}/>
+                <MovieRow movies={customMovies1}/>
+                <MovieRow movies={customMovies2}/>
                 <h2>Programs</h2>
                 <ul style={styles.list}>
                     <li>Unity</li>
@@ -123,17 +131,17 @@ export default function () {
                 </ul>
                 <h2>API'S</h2>
                 <p>
-                    tailwind, scss, vite, typescript, docker, postgres, mysql, sqllite, 
-                    redis, stripe, graphql, threejs, NodeJS, Neovim, firebase, flutter, 
+                    tailwind, scss, vite, typescript, docker, postgres, mysql, sqllite, <br />
+                    redis, stripe, graphql, threejs, NodeJS, Neovim, firebase, flutter, <br />
                     react native, Julia, Linux, Git, OpenGL, Vulkan, 
                 </p>
-                <h2>Learning</h2>
-                <ul style={styles.list}>
-                    <li>Nuke</li>
-                    <li>Cinema 4D</li>
-                    <li>Houdini</li>
-                    <li>Susbtance Painter</li>
-                </ul>
+                    <h2>Learning</h2>
+                    <ul style={styles.list}>
+                        <li>Nuke</li>
+                        <li>Cinema 4D</li>
+                        <li>Houdini</li>
+                        <li>Susbtance Painter</li>
+                    </ul>
             </div>
 
         </>

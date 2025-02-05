@@ -5,6 +5,8 @@ import BlackAndWhiteOverlay from '../components/BlackAndWhiteOverlay';
 import BackgroundText from "../components/BackgroundText";
 import DVDLogo from '../components/DVDLogo';
 import BlackEagleIcon from '../assets/BlackEagleIcon.png'
+import BloomOverlay from '../components/BloomOverlay';
+import BlurOverlay from '../components/BlurOverlay';
 
 export default function () {
 
@@ -43,6 +45,8 @@ export default function () {
 
     return(
         <>
+            {/* <BloomOverlay intensity={0.05} flickerIntensity={0.05} flickerSpeed={3} /> */}
+            <BlurOverlay intensity={0.4} transparency={0}/>
             <div>
                 <h2>Contacts</h2>
                 <p>Email: ___</p>

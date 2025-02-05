@@ -35,9 +35,9 @@ const styles = {
     display: 'flex',
     justifyContent: "center",
     gap: "16px",
-    // overflow: "hidden",
-    // overflowX: "scroll", // Horizontal scroll for smaller screens
     padding: "16px",
+    maxHeight: "400px",  // Set max height for the row
+    overflowY: "auto",   // Adds vertical scrolling if content exceeds max height
   },
   movie: {
     minWidth: "150px",
@@ -45,7 +45,9 @@ const styles = {
   },
   poster: {
     width: "100%",
+    maxHeight: "150px", // Set max height for posters to maintain proportions
     borderRadius: "8px",
+    objectFit: "cover", // Ensures images cover the area without distortion
   },
   title: {
     marginTop: "8px",

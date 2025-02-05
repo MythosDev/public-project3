@@ -1,10 +1,18 @@
 import React from 'react';
 
-const BlurOverlay = ({ isVisible, onClose }) => {
-  if (!isVisible) return null; // Only render the overlay if it's visible
+const BlurOverlay = ({ isVisible = true, onClose, intensity = 8, transparency = 0.5 }) => {
+  if (!isVisible) return null; // Only render if visible
 
   return (
-    <div style={styles.overlay} onClick={onClose}>
+    <div 
+      style={{ 
+        ...styles.overlay, 
+        backdropFilter: `blur(${intensity}px)`, // Dynamically set blur intensity
+        backgroundColor: `rgba(0, 0, 0, ${transparency})`,
+      }} 
+      onClick={onClose}
+    >
+      {/* Optional: Content inside the overlay */}
       {/* <div style={styles.content}>
         <h3>Blurred Overlay</h3>
         <p>Click anywhere to close the overlay.</p>
@@ -13,27 +21,25 @@ const BlurOverlay = ({ isVisible, onClose }) => {
   );
 };
 
-// Inline Styles
+// Static Styles
 const styles = {
   overlay: {
     position: 'fixed',
     top: 0,
     left: 0,
     width: '100%',
-    height: '100%',
-    backgroundColor: 'rgba(0, 0, 0, 0.5)', // Semi-transparent background
-    backdropFilter: 'blur(8px)', // Apply blur effect to the background
+    height: '100%', // Semi-transparent background
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    zIndex: 50, // Ensure the overlay is on top of other content
+    zIndex: 50, // Ensure overlay is on top
   },
   content: {
     padding: '20px',
     backgroundColor: 'white',
     borderRadius: '8px',
     textAlign: 'center',
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)', // Optional: for a slight shadow effect on content
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)', // Slight shadow effect
   },
 };
 

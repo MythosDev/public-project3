@@ -15,6 +15,8 @@ import Resume from './pages/Resume';
 import Statistica from './pages/Statistica';
 import NewsPage from './pages/NewsPage';
 import EarthPage from './pages/EarthPage';
+import EightiesPage from './pages/EightiesPage';
+import AnatomyPage from './pages/AnatomyPage';
 
 
 function App() {
@@ -35,6 +37,8 @@ function App() {
           <Route path='/Statistica' element={<Statistica/>}/>
           <Route path='/News' element={<NewsPage/>}/>
           <Route path='/Earth' element={<EarthPage/>}/>
+          <Route path='/Man' element={<AnatomyPage/>}/>
+          <Route path='/Eighties' element={<EightiesPage/>}/>
         </Routes>
       </BrowserRouter>
     </>
