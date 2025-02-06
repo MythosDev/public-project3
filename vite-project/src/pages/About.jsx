@@ -13,7 +13,6 @@ import Cplusplus from '../assets/c++.png';
 import ReactIcon from '../assets/react.png';
 import GodotIcon from '../assets/godot_icon.svg'
 import HLSLIcon from '../assets/hlsl.png'
-import BloomOverlay from '../components/BloomOverlay';
 
 export default function () {
 

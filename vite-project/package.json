@@ -13,6 +13,7 @@
     "deploy": "gh-pages - d dist"
   },
   "dependencies": {
+    "@fontsource/noto-sans-display": "^5.1.1",
     "@react-three/drei": "^9.121.4",
     "@react-three/fiber": "^8.17.14",
     "chart.js": "^4.4.7",
