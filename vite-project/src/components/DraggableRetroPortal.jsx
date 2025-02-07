@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
+//add z index sorting, add sizes as parameters
+
 const DraggableWindow =({ LinkedPage = "https://censored.tv/"}) => {
   const [count, setCount] = useState(0);
   const [dragging, setDragging] = useState(false);

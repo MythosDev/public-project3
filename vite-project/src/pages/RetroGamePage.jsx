@@ -3,6 +3,7 @@ import React from 'react';
 import TopBar from '../components/TopBar';
 import { useEffect } from 'react';
 import DraggableWindow from '../components/DraggableRetroPortal';
+import ditherImg from '../assets/ditherimg.png'
 
 // https://codesandbox.io/p/sandbox/objective-chandrasekhar-t5t6h?file=%2Fsrc%2Findex.js%3A6%2C1-6%2C47
 // https://jdan.github.io/98.css/
@@ -29,7 +30,7 @@ export default function () {
     return(
         <>
             {/* <TopBar /> */}
-            {/* <div style={{ width: 700 }} className="window">
+            <div style={{ width: 400 }} className="window">
                 <div className="title-bar">
                     <div className="title-bar-text">JungleVoyage.exe</div>
                     <div className="title-bar-controls">
@@ -40,11 +41,12 @@ export default function () {
                 </div>
 
                 <div className="window-body">
-                    <iframe style={{height: "600px", width: "680px"}} src="https://censored.tv/"></iframe>
+                    <img style={{height: "340px", width: "380px"}} src={ditherImg}></img>
                 </div>
-            </div> */}
-            <DraggableWindow LinkedPage='https://censored.tv/' />
-            <DraggableWindow LinkedPage='https://www.slightlyoffensive.com/top-political-podcasts/'/>
+            </div>
+            <DraggableWindow LinkedPage='/Home' />
+            {/* <DraggableWindow LinkedPage='https://censored.tv/' />
+            <DraggableWindow LinkedPage='https://www.slightlyoffensive.com/top-political-podcasts/'/> */}
             <div>
                 <h2>Contacts</h2>
                 <p>Email: ___</p>
