@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import MovieRow from '../components/MovieRow';
 import demoPic from '../assets/mypic.png';
+import '../index.css'
 
 import CSharp from 'programming-languages-logos/src/csharp/csharp.png';
 import Javascript from 'programming-languages-logos/src/javascript/javascript.png';
@@ -13,6 +14,8 @@ import Cplusplus from '../assets/c++.png';
 import ReactIcon from '../assets/react.png';
 import GodotIcon from '../assets/godot_icon.svg'
 import HLSLIcon from '../assets/hlsl.png'
+import ParallaxBackground from '../components/ParallaxBackground';
+import BlackEagleIcon from '../assets/BlackEagleIcon.png'
 
 export default function () {
 
@@ -64,6 +67,7 @@ export default function () {
     return(
         <>
             <div>
+                {/* <ParallaxBackground /> */}
                 <Link to="/Home" style={styles.linker}>Home</Link>
                 <br />
                 <br />

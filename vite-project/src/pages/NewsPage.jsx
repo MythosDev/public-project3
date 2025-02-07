@@ -2,6 +2,7 @@ import React from "react";
 import TopBar from "../components/TopBar";
 import NewsRow from "../components/NewsRow";
 import Gate from "../components/Gate";
+import '../index.css'
 
 const NewsPage = () => {
   return (

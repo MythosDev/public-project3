@@ -68,8 +68,8 @@ const BloomOverlay = () => {
       <OverlayStyles />
       <div className="overlay-container">
         <h1 className="overlay-heading">Welcome</h1>
-        <p>This is an example of text with a flickering neon shadow effect.</p>
-        <Link className="overlay-link" to="/Home">Click Here</Link>
+        <p>Once you enter there is no going back.</p>
+        <Link className="overlay-link" to="/Home">Open the Gate</Link>
         {/* <img src={demoPic} alt="" /> */}
       </div>
     </div>

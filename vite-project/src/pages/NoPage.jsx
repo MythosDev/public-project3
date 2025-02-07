@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import Modal from '../components/Modal';
+import '../index.css'
 
 export default function () {
 

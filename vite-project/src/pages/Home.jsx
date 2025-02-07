@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import '../index.css'
 
 export default function () {
 
@@ -24,6 +25,8 @@ export default function () {
                 <Link to="/News">News</Link>
                 <br />
                 <Link to="/Earth">Earth</Link>
+                <br />
+                <Link to="/SM">SM</Link>
                 <br />
             </div>
 

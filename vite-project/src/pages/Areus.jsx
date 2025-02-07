@@ -5,6 +5,7 @@ import React from 'react';
 import MovieRow from '../components/MovieRow';
 import TopBar from '../components/TopBar';
 import Bar from '../components/Bar';
+import '../index.css'
 
 import AreusWoman from '../assets/AreusWoman.png'
 import AreusMan from '../assets/AreusMan.png'

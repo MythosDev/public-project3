@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 
 import Grid from "../components/Grid";
+import '../index.css'
 
 export default function () {
     return(

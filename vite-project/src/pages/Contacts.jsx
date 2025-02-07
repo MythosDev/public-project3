@@ -6,6 +6,7 @@ import BackgroundText from "../components/BackgroundText";
 import DVDLogo from '../components/DVDLogo';
 import BlackEagleIcon from '../assets/BlackEagleIcon.png'
 import BlurOverlay from '../components/BlurOverlay';
+import '../index.css'
 
 export default function () {
 
@@ -57,7 +58,7 @@ export default function () {
                     zIndex: -51,
                     }}/> */}
                 {/* <BloomOverlay intensity={0.05} flickerIntensity={0.05} flickerSpeed={3} /> */}
-                <BlurOverlay intensity={0.75} transparency={0}/>
+                {/* <BlurOverlay intensity={0.75} transparency={0}/> */}
                 <div>
                     <h2>Contacts</h2>
                     <p>Email: ___</p>
@@ -71,7 +72,7 @@ export default function () {
                 <div style={styles.BigText}>
                     <h2><Link to="/Home">Contact</Link></h2>
                 </div>
-                <svg width="500px" height="200px">
+                {/* <svg width="500px" height="200px">
                     <defs>
                         <filter id="blur">
                             <feGaussianBlur stdDeviation="5" />
@@ -79,7 +80,7 @@ export default function () {
                     </defs>
                     <circle cx="100" cy="100" r="50" fill="green" filter="url(#blur)" ></circle>
                     <circle cx="220" cy="100" r="50" fill="red"></circle>
-                </svg>
+                </svg> */}
                 <div style={styles.CornerText}>
                     <h2>Welcome</h2>
                 </div>
