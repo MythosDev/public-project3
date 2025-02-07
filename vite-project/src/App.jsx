@@ -18,6 +18,7 @@ import EarthPage from './pages/EarthPage';
 import EightiesPage from './pages/EightiesPage';
 import AnatomyPage from './pages/AnatomyPage';
 import Simple_mobile from './simple_mobile/SM_Page';
+import RetroGamePage from './pages/RetroGamePage';
 
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
           <Route path='/Man' element={<AnatomyPage/>}/>
           <Route path='/Eighties' element={<EightiesPage/>}/>
           <Route path='/SM' element={<Simple_mobile/>}/>
+          <Route path='/Retro' element={<RetroGamePage/>}/>
         </Routes>
       </BrowserRouter>
     </>
