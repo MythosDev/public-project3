@@ -19,6 +19,8 @@ import EightiesPage from './pages/EightiesPage';
 import AnatomyPage from './pages/AnatomyPage';
 import Simple_mobile from './simple_mobile/SM_Page';
 import RetroGamePage from './pages/RetroGamePage';
+import TiktokClone from './pages/TiktokClone';
+import MoviePage from './pages/MoviePage';
 
 
 function App() {
@@ -43,6 +45,8 @@ function App() {
           <Route path='/Eighties' element={<EightiesPage/>}/>
           <Route path='/SM' element={<Simple_mobile/>}/>
           <Route path='/Retro' element={<RetroGamePage/>}/>
+          <Route path='/Tiktok' element={<TiktokClone/>}/>
+          <Route path='/Movies' element={<MoviePage/>}/>
         </Routes>
       </BrowserRouter>
     </>
