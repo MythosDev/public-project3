@@ -7,8 +7,8 @@ export default function () {
     return (
         <>
             <TopBar/>
-            <ReactPlayer url='https://www.youtube.com/watch?v=YRvu6e9Utd4&ab_channel=FilmCourage' />
-            <ReactPlayer url='/Made in the Image of GodNo child should be aborted.mp4' />
+            <ReactPlayer url='https://www.youtube.com/watch?v=YRvu6e9Utd4&ab_channel=FilmCourage' controls/>
+            <ReactPlayer url='/cutebaby.mp4' controls/>
             <h2>Recents</h2>
             <MovieRow />
             <h2>Watchlist</h2>

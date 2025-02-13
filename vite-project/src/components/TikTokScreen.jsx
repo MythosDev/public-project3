@@ -11,7 +11,7 @@ const videos = [
   },
   {
     id: 2,
-    src: "/Made in the Image of GodNo child should be aborted.mp4",
+    src: "/cutebaby.mp4",
     likes: 95,
     comments: ["Wow!", "Cool content!"],
   },
