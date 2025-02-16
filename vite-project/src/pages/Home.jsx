@@ -28,6 +28,8 @@ export default function () {
                 <br />
                 <Link to="/SM">SM</Link>
                 <br />
+                <Link to="/Property">Property</Link>
+                <br />
             </div>
 
         </>

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import React from 'react';
-import './App.css'
+// import './App.css'
 
 //import { Link } from 'reac-router-dom';
 import { BrowserRouter, Routes, Route, Link  } from 'react-router-dom';
@@ -21,6 +21,8 @@ import Simple_mobile from './simple_mobile/SM_Page';
 import RetroGamePage from './pages/RetroGamePage';
 import TiktokClone from './pages/TiktokClone';
 import MoviePage from './pages/MoviePage';
+import PropertyPage from './pages/PropertySite/PropertyPage';
+import OrganizationPage from './pages/ActivistSite/OrganizationPage';
 
 
 function App() {
@@ -47,6 +49,8 @@ function App() {
           <Route path='/Retro' element={<RetroGamePage/>}/>
           <Route path='/Tiktok' element={<TiktokClone/>}/>
           <Route path='/Movies' element={<MoviePage/>}/>
+          <Route path='/Property' element={<PropertyPage/>}/>
+          <Route path='/Org' element={<OrganizationPage/>}/>
         </Routes>
       </BrowserRouter>
     </>
