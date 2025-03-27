@@ -6,7 +6,7 @@ import SearchBarList from '../components/SearchBarList'
 import SimpleTagSystem from '../components/SimpleTagSystem'
 import ChartComponent from '../components/ChartComponent'
 import Gate from '../components/Gate'
-import '../index.css'
+import '../Global.module.css'
 
 
 export default function () {
@@ -84,7 +84,8 @@ export default function () {
 
     return (
         <>
-            <Gate />
+        <div className="rootStyles">
+        <Gate />
             <Link to="/Home">Home</Link>
             <br />
             <br />
@@ -111,6 +112,7 @@ export default function () {
                 <h2>Crime Statistics</h2>
                 <ChartComponent type="pie" data={gender_crime_data} options={crime_options} />
             </div>
+        </div>
         </>
     )
 

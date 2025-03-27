@@ -13,7 +13,8 @@ export default function BottomBar() {
       display: "flex",
       justifyContent: "space-around",
       alignItems: "center",
-      borderTop: "1px solid #ddd"
+      borderTop: "1px solid #ddd",
+      zIndex: 5,
     }}>
       <NavItem icon="🏠" label="Home" />
       <NavItem icon="🔍" label="Search" />

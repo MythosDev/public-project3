@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom';
-import '../index.css'
+import '../Global.module.css'
 
 export default function () {
 
     return(
         <>
-            <div>
-                <h2>Home Page</h2>
-                <p>Portfolio link would go here</p>
+            {/* className="rootStyles" */}
+            <div className="text-center justify-center text-lg font-medium">
+                <h2 className='text-4xl font-bold m-6'>Home Page</h2>
                 <Link to="/Portfolio">Portfolio</Link>
                 <br />
                 <Link to="/Contacts">Contact</Link>
@@ -30,6 +30,13 @@ export default function () {
                 <br />
                 <Link to="/Property">Property</Link>
                 <br />
+                <Link to="/VPN">Atlas VPN</Link>
+                <br />
+                <Link to="/SimpleNews">Sim News</Link>
+                <br />
+                <Link to="/PokiToki">PokiToki</Link>
+                <br />
+                <Link to="/Arcade">PokiToki</Link>
             </div>
 
         </>

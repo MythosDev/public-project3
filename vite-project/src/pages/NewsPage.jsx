@@ -2,24 +2,25 @@ import React from "react";
 import TopBar from "../components/TopBar";
 import NewsRow from "../components/NewsRow";
 import Gate from "../components/Gate";
-import '../index.css'
+import '../Global.module.css'
 
 const NewsPage = () => {
   return (
-    <div>
+    <div className="rootStyles">
       <Gate />
       <TopBar />
 
-        <div style={{marginTop: '0px'}}>
-            <h1>Revolutions in Georgia</h1>
-            <div className="row info">
+      <div className="TopArticle">
+          <div className="Row Title"></div>
+          <h1>Revolutions in Georgia</h1>
+          <div className="row info">
             <p>19, May, 2024</p>
             <p>Montana, USA</p>
             <p>(Getty Images)</p>
-            </div>
+          </div>
 
-            <NewsRow />
-        </div>
+          <NewsRow />
+      </div>
 
 
       {/* Placeholder for additional content */}
@@ -42,6 +43,11 @@ const NewsPage = () => {
           justify-content: space-between;
           align-items: center;
           padding: 10px;
+        }
+
+        .TopArticle {
+          width: 100vw;
+          
         }
 
         .logo {

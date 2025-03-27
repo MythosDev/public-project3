@@ -6,7 +6,7 @@ import Earth from '../../public/Earth.jsx'
 import TopBar from '../components/TopBar.jsx';
 import PanelOverlay from '../components/PanelOverlay.jsx';
 // import { ambientLight } from '@react-three/fiber';
-import '../index.css'
+import '../Global.module.css'
 
 export default function () {
 

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import MovieRow from '../components/MovieRow';
 import demoPic from '../assets/mypic.png';
-import '../index.css'
+import '../Global.module.css'
 
 import CSharp from 'programming-languages-logos/src/csharp/csharp.png';
 import Javascript from 'programming-languages-logos/src/javascript/javascript.png';

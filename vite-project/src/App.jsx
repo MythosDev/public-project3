@@ -4,6 +4,7 @@ import React from 'react';
 
 //import { Link } from 'reac-router-dom';
 import { BrowserRouter, Routes, Route, Link  } from 'react-router-dom';
+// import './Global.module.css'
 import Home from './pages/Home'
 import Portfolio from './pages/Portfolio'
 import Contacts from './pages/Contacts'
@@ -23,6 +24,10 @@ import TiktokClone from './pages/TiktokClone';
 import MoviePage from './pages/MoviePage';
 import PropertyPage from './pages/PropertySite/PropertyPage';
 import OrganizationPage from './pages/ActivistSite/OrganizationPage';
+import VPN from './pages/VPN/VPNPage';
+import SimpleNewSite from './pages/SimpleNewsSite';
+import PokiToki from './pages/PokiToki';
+import Arcade from './pages/Arcade/Arcade';
 
 
 function App() {
@@ -51,6 +56,10 @@ function App() {
           <Route path='/Movies' element={<MoviePage/>}/>
           <Route path='/Property' element={<PropertyPage/>}/>
           <Route path='/Org' element={<OrganizationPage/>}/>
+          <Route path='/VPN' element={<VPN />}/>
+          <Route path='/SimpleNews' element={<SimpleNewSite />}/>
+          <Route path='/PokiToki' element={<PokiToki />}/>
+          <Route path='/Arcade' element={<Arcade/>}/>
         </Routes>
       </BrowserRouter>
     </>

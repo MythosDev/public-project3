@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import BloomOverlay from '../components/BloomOverlay'
-import '../index.css'
+import '../Global.module.css'
 
 export default function () {
 

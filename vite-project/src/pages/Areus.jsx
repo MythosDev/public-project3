@@ -5,7 +5,7 @@ import React from 'react';
 import MovieRow from '../components/MovieRow';
 import TopBar from '../components/TopBar';
 import Bar from '../components/Bar';
-import '../index.css'
+import '../Global.module.css'
 
 import AreusWoman from '../assets/AreusWoman.png'
 import AreusMan from '../assets/AreusMan.png'
@@ -13,8 +13,30 @@ import AreusBook from '../assets/AreusBook.jpg'
 import Gate from '../components/Gate';
 
 export default function () {
+    
+    const styles = {
+        article: {
+            // width: '50vw',
+            // height: '100vh',
+            // backgroundColor: 'slategray',
+            // position: 'absolute',
+            // top: 0,
+            // left: 0,
+            // display: 'flex', // Center content
+            // placeItems: 'center',
+            minWidth: '700px',
+            // justifyContent: 'center', // Center horizontally
+            // alignItems: 'center', // Center vertically
+        },
+        div: {
+            margin: '0px',
+            padding: '0px',
+        }, 
+        
+    };
+    
     return(
-        <>
+        <div style={styles.div}>
             <title>Areus</title>
             <style>
             {`
@@ -133,7 +155,7 @@ export default function () {
             </style>
             
             <Gate />
-            <article>
+            <article style={styles.article}>
                 {/* <TopBar /> */}
                 <Bar/>
                 <div className="banner">
@@ -182,6 +204,6 @@ export default function () {
 
             <BottomBar/>
 
-        </>
+        </div>
     )
 }

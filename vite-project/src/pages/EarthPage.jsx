@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import '../index.css'
+import '../Global.module.css'
 import { useState, Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import {Environment, OrbitControls } from '@react-three/drei'
@@ -50,6 +50,15 @@ function EarthPage () {
             {/* <Link to="/Home">Home</Link> */}
             <TopBar />
             <PanelOverlay />
+            <div className="fixed bottom-0 w-full z-10 justify-center flex mb-8">
+                <ul className="steps">
+                    <li className="step step-primary">Prehistory</li>
+                    <li className="step step-primary">Classical</li>
+                    <li className="step step-primary">Medieval</li>
+                    <li className="step">Colonization</li>
+                    <li className="step">Modern</li>
+                </ul>
+            </div>
             {/* <div style={styles.body}> */}
                 <Canvas style={styles.body}>
                     <ambientLight intensity={2}/>

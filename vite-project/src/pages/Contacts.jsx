@@ -6,7 +6,7 @@ import BackgroundText from "../components/BackgroundText";
 import DVDLogo from '../components/DVDLogo';
 import BlackEagleIcon from '../assets/BlackEagleIcon.png'
 import BlurOverlay from '../components/BlurOverlay';
-import '../index.css'
+import '../Global.module.css'
 
 export default function () {
 
