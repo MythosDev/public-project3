@@ -12,6 +12,7 @@ import {
   Legend,
   ArcElement,
 } from "chart.js";
+import zoomPlugin from 'chartjs-plugin-zoom';
 
 // Register Chart.js components
 ChartJS.register(
@@ -23,7 +24,8 @@ ChartJS.register(
   Title,
   Tooltip,
   Legend,
-  ArcElement
+  ArcElement,
+  zoomPlugin,
 );
 
 const ChartComponent = ({ type = "line", data, options }) => {
@@ -42,7 +44,7 @@ const ChartComponent = ({ type = "line", data, options }) => {
     }
   };
 
-  return <div style={{ maxWidth: "600px", margin: "20px auto" }}>{renderChart()}</div>;
+  return <div style={{ minWidth: "600px", margin: "20px auto" }}>{renderChart()}</div>;
 };
 
 export default ChartComponent;

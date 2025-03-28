@@ -1,12 +1,107 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
+import ChartComponent from '../components/ChartComponent';
 
 
 //get rid of this compenent here it is not needed
 //iclude download PDF button for resume
 
+function Card ({ name, description, img = "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"}) {
+    return (
+        <div className="card bg-base-100 w-96 shadow-sm">
+            <figure>
+                <img
+                src={img}
+                alt="Shoes" />
+            </figure>
+            <div className="card-body">
+                <h2 className="card-title">{name}</h2>
+                <p>{description}</p>
+                <div className="card-actions justify-end">
+                <button className="btn btn-primary">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+function Subscription ({ name = "Standard", tag = "Most Popular", tagType = "badge-warning", price = "10$/mo", children}) {
+    return (
+        <div className="card w-96 bg-base-100 shadow-sm">
+            <div className="card-body">
+                <span className={`badge badge-xs ${tagType}`}>{tag}</span>
+                <div className="flex justify-between">
+                <h2 className="text-3xl font-bold">{name}</h2>
+                <span className="text-xl">{price}</span>
+                </div>
+                <ul className="mt-6 flex flex-col gap-2 text-xs">
+                    {children}
+                </ul>
+                <div className="mt-6">
+                <button className="btn btn-primary btn-block">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+const Price = 10; // Set your desired price per month
+const Users = [10, 50, 100, 250, 500, 1000, 2000, 5000, 10000, 25000, 50000];
+
+// Calculate yearly revenue for each user count
+const yearlyRevenue = Users.map(userCount => Price * 12 * userCount);
+const monthlyRevenue = Users.map(userCount => Price * userCount);
+
+const chart_data = {
+    labels: Users.map(String), // Convert to strings for labels
+    datasets: [
+      {
+        label: "Yearly Revenue ($)",
+        data: yearlyRevenue,
+        borderColor: "rgba(75,192,192,1)",
+        backgroundColor: "rgba(75,192,192,0.2)",
+        borderWidth: 2,
+      },
+      {
+        label: "Monthly Revenue ($)",
+        data: monthlyRevenue,
+        borderColor: "rgba(192,75,192,1)",
+        backgroundColor: "rgba(192,75,192,0.2)",
+        borderWidth: 2,
+      },
+    ],
+  };
+
+const options = {
+    responsive: true,
+    plugins: {
+        legend: {
+            position: "top",
+        },
+        title: {
+            display: true,
+            text: "Income",
+        },
+        zoom: {
+            pan: {
+              enabled: true,
+              mode: 'x', // Pan along the X-axis
+            },
+            zoom: {
+              wheel: {
+                enabled: true,
+              },
+              pinch: {
+                enabled: true,
+              },
+              mode: 'x', // Zoom along the X-axis
+            },
+        },
+    },
+};
 
 export default function () {
+
     return(
         <>
             <Link to="/Home">Home</Link>
@@ -69,6 +164,108 @@ export default function () {
                 <div className="badge badge-success">Success</div>
                 <div className="badge badge-warning">Warning</div>
                 <div className="badge badge-error">Error</div>
+                <div className='flex flex-row gap-8'>
+                    <Card name="Arcade" description="Play Game" />
+                    <Card name="Poster" />
+                    <Card name="Jacket" />
+                </div>
+                <div className='flex flex-row gap-8'>
+                <Subscription name='basic' tagType='badge-success' tag='lowest price' price='5$/mo'>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+                        <span>Access to films</span>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+                        <span>Access to all blockbusters after 1 month</span>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+                        <span>Four concurrent viewers</span>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+                        <span>HD Streaming</span>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+                        <span>HD Downloads</span>
+                    </li>
+                    <li className="opacity-50">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-base-content/50" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+                        <span className="line-through">Arcade</span>
+                    </li>
+                </Subscription>
+                <Subscription>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+                            <span>Access to films</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+                            <span>One free movie ticket / month</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+                            <span>Four concurrent viewers</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+                            <span>HD Streaming</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+                            <span>4K Download</span>
+                        </li>
+                        <li className="opacity-50">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-base-content/50" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+                            <span className="line-through">Early film access</span>
+                        </li>
+                </Subscription>
+                <Subscription name='donate' tagType='badge-secondary' tag='most features' price='50$/mo'>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+                        <span>4K Streaming</span>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+                        <span>Union Membership</span>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+                        <span>Monthly DVD</span>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+                        <span>Partial Voting Rights</span>
+                    </li>
+                </Subscription>
+                </div>
+                {/* <div className='bg-slate-400 w-[1080px] h-[1080px]'> */}
+                    <ChartComponent type="line" data={chart_data} options={options} />
+                {/* </div> */}
+                <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
+                    <nav>
+                        <h6 className="footer-title">Services</h6>
+                        <a className="link link-hover">Branding</a>
+                        <a className="link link-hover">Design</a>
+                        <a className="link link-hover">Marketing</a>
+                        <a className="link link-hover">Advertisement</a>
+                    </nav>
+                    <nav>
+                        <h6 className="footer-title">Company</h6>
+                        <a className="link link-hover">About us</a>
+                        <a className="link link-hover">Contact</a>
+                        <a className="link link-hover">Jobs</a>
+                        <a className="link link-hover">Press kit</a>
+                    </nav>
+                    <nav>
+                        <h6 className="footer-title">Legal</h6>
+                        <a className="link link-hover">Terms of use</a>
+                        <a className="link link-hover">Privacy policy</a>
+                        <a className="link link-hover">Cookie policy</a>
+                    </nav>
+                </footer>
             </div>
             {/* </div> */}
 
