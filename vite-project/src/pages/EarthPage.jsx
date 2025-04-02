@@ -22,7 +22,9 @@ import EarthBump from '../assets/World_elevation_map.png';
 import Population from '../components/Population.jsx';
 import EarthDemographics from '../components/EarthDemographics.jsx';
 import Tile from '../components/Tile.jsx';
-
+import Tiles from '../components/Tiles.jsx';
+import GlobeMap from '../components/GlobeComponent.jsx';
+import PopulationPyramid from '../components/PopulationPyramid.jsx';
 
 
 function EarthPage () {
@@ -122,6 +124,8 @@ function EarthPage () {
                         <EarthDemographics csvFilePath="/simple_religions.csv" />
                         <h1 className='flex justify-center font-bold text-4xl'>Ethnicity</h1>
                         <EarthDemographics csvFilePath="/simple_ethnicities.csv" />
+                        <h1 className='flex justify-center font-bold text-4xl'>Age</h1>
+                        <PopulationPyramid csvFilePath="/age_pyramid.csv"/>
                         </div>
                         {/* Add more charts as needed */}
                         {/* Example: <EarthDemographics /> */}
@@ -167,35 +171,12 @@ function EarthPage () {
             {/* <div style={styles.body}> */}
                 <Canvas style={styles.body}>
                     <ambientLight intensity={2}/>
-                    {/* <ambientLight intensity={0.5} /> */}
-                    {/* <OrbitControls minDistance={1.25} /> */}
                     <OrbitControls />
-                    {/* when size = 2, minDistance = 2.33 */}
-                    {/* <Suspense fallback={null}>
-                        <Earth/>
-                    </Suspense>
-                    <LinesOnGlobe /> */}
-                    {/* <R3fGlobe /> */}
                     <Suspense fallback={null}>
-                        {/* <R3fGlobe
-                            scale={0.01}
-                            width={600}
-                            height={600}
-                            globeImageUrl={EarthImg}
-                            bumpImageUrl={EarthBump}
-                            // bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
-                        /> */}
-                        <Tile />
-                        <Population
-                        />
+                        <Tiles />
+                        {/* <Tile /> */}
+                        {/* <Population/> */}
                     </Suspense>
-                    {/* <group scale={[0.5, 0.5, 0.5]}> //Correct way to scale
-                        <Globe
-                            globeImageUrl={EarthImg}
-                            width={600}  // Controls canvas, not actual size
-                            height={600}
-                        />
-                    </group> */}
                     <Environment preset='sunset' />
                 </Canvas>
             {/* </div> */}

@@ -1,11 +1,14 @@
 import React from "react";
 import Img from "/Cover_Art.png";
+import SocialMediaLinks from "../components/SocialMediaLinks";
+
+const Demo = 'demo_pic.png'
 
 const Page = () => {
     return (
         <div className="page">
             <div className="topbar">
-                <h1>Title</h1>
+                <h1>Areus</h1>
             </div>
             <menu>
                 <h2>home</h2>
@@ -13,18 +16,17 @@ const Page = () => {
             </menu>
             <div className="mainbody">
                 <article>
-                    <h1>Title</h1>
-                    <h2>Subtitle</h2>
+                    <h1>Minority/Majority</h1>
+                    <h2>The dynamics of homogeneity</h2>
+                    <h3>2025-03-27</h3>
+                    <h3>7 min</h3>
                     <div className="author">
-                        <div className="icon"></div>
+                        <img src={Demo} className="icon"></img>
                         <div className="names">
-                            <p>Name</p>
-                            <p>Date + length</p>
+                            <h2>William Busch</h2>
                         </div>
                         <div className="linkrow">
-                            <div className="link"></div>
-                            <div className="link"></div>
-                            <div className="link"></div>
+                            <SocialMediaLinks />
                         </div>
                     </div>
                     <div>
@@ -113,11 +115,18 @@ const Page = () => {
                 h1 {
                     font-weight: bold;
                     font-size: 36px;
+                    text-align: center;
                 }
 
                 h2 {
                     font-weight: bold;
                     font-size: 24px;
+                    text-align: center;
+                }
+
+                h3 {
+                    font-weight: bold;
+                    font-size: 16px;
                 }
 
                 div {
@@ -137,6 +146,9 @@ const Page = () => {
                     // justify-content: space-around;
                     gap: 5px;
                     align-items: center;
+                    background-color: red;
+                    padding: 5px;
+                    border-radius: 15px;
                 }
 
                 .linkrow {
@@ -153,7 +165,7 @@ const Page = () => {
 
                 .icon {
                     border-radius: 50px;
-                    background-color: red;
+                    // background-color: red;
                     height: 50px;
                     width: 50px;
                 }

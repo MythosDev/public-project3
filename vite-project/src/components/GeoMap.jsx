@@ -29,7 +29,7 @@ const GeoMap = ({ geoJsonUrl, center = [51.505, -0.09], zoom = 5 }) => {
   }, [geoJsonUrl]);
 
   return (
-    <div className="w-full min-w-[400px] max-w-[1080px] min-h-[400px] max-h-[720px] rounded-xl overflow-hidden">
+    <div className="w-full min-w-[400px] max-w-[1080px] min-h-[400px] max-h-[1080px] rounded-xl overflow-hidden">
       <MapContainer center={center} zoom={zoom} style={{ height: '100%', width: '100%' }}>
         <TileLayer
           url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"

@@ -36,7 +36,7 @@ export default function () {
                 <br />
                 <Link to="/PokiToki">PokiToki</Link>
                 <br />
-                <Link to="/Arcade">PokiToki</Link>
+                <Link to="/Arcade">Arcade</Link>
             </div>
 
         </>

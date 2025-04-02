@@ -7,7 +7,34 @@ import ContactCard from '../../components/ContactCard';
 import EmailBox from '../../components/EmailBox';
 import ArcadeCabinet from './ArcadeCabinet';
 import GeoMap from '../../components/GeoMap';
+import GlobeComponent from '../../components/GlobeComponent';
+import SkillGrid from '../../components/SkillGrid';
 
+import CSharp from 'programming-languages-logos/src/csharp/csharp.png';
+import Javascript from 'programming-languages-logos/src/javascript/javascript.png';
+import Java from 'programming-languages-logos/src/java/java.png';
+import Python from 'programming-languages-logos/src/python/python.png'
+import HTML from 'programming-languages-logos/src/html/html.png'
+import CSS from 'programming-languages-logos/src/css/css.png'
+import Cplusplus from '../../assets/c++.png';
+import ReactIcon from '../../assets/react.png';
+import GodotIcon from '../../assets/godot_icon.svg';
+import HLSLIcon from '../../assets/hlsl.png';
+import PersonalCard from '../../components/PersonalCard';
+
+
+const Skills = [
+    { id: 1, title: "C#", poster: CSharp },
+    { id: 2, title: "Javascript", poster: Javascript },
+    { id: 3, title: "React", poster: ReactIcon },
+    { id: 4, title: "Java", poster: Java },
+    { id: 5, title: "Python", poster: Python },
+    { id: 6, title: "HTML", poster: HTML },
+    { id: 7, title: "CSS", poster: CSS },
+    { id: 8, title: "GDScript", poster: GodotIcon },
+    { id: 9, title: "C++", poster: Cplusplus },
+    { id: 10, title: "HLSL", poster: HLSLIcon },
+  ];
 
 const Cover = '/Cover_Art.png'
 const Name = 'Bloodlust'
@@ -33,22 +60,26 @@ export default function () {
                     <a href="/Resume.pdf" download className="bg-blue-500 text-white px-4 py-2 rounded-lg">Download Resume (PDF)</a>
                 </div>
                 <div className='flex justify-center m-4 gap-4'>
-                    <ContactCard screenImage={Demo} name={MyName}/>
-                    <EmailBox/>
+                    <PersonalCard />
                     <GeoMap />
                 </div>
                 <br />
                 <EmailBox/>
+                <PersonalCard />
+                <div className='flex w-[500px] rounded-xl bg-slate-500 p-4 m-4 justify-around'>
+                    <SkillGrid skills={Skills} />
+                </div>
                 <br />
-                <ContactCard screenImage={Demo} name={MyName}>
-                        <EmailBox/>
-                </ContactCard>
+                <div className='flex gap-20'>
+                <PersonalCard />
+                <GlobeComponent />
+                </div>
                 <br />
                 <br />
                 <br />
                 <br />
             </div>
-            <GeoMap/>
+            {/* <GeoMap/> */}
             <ContactCard screenImage={Demo} name={MyName}/>
             <br />
             <br />

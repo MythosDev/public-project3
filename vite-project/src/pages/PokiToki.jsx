@@ -3,9 +3,6 @@ import React from 'react';
 import ChartComponent from '../components/ChartComponent';
 
 
-//get rid of this compenent here it is not needed
-//iclude download PDF button for resume
-
 function Card ({ name, description, img = "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"}) {
     return (
         <div className="card bg-base-100 w-96 shadow-sm">
@@ -46,7 +43,10 @@ function Subscription ({ name = "Standard", tag = "Most Popular", tagType = "bad
 }
 
 const Price = 10; // Set your desired price per month
-const Users = [10, 50, 100, 250, 500, 1000, 2000, 5000, 10000, 25000, 50000];
+const Users = [
+    10, 50, 100, 250, 300, 400, 500, 600, 700, 750, 800, 900, 1000, 
+    2000, 2500, 5000, 7500, 10000, 15000, 20000, 25000, 50000
+];
 
 // Calculate yearly revenue for each user count
 const yearlyRevenue = Users.map(userCount => Price * 12 * userCount);
