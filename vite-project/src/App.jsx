@@ -26,7 +26,7 @@ import PropertyPage from './pages/PropertySite/PropertyPage';
 import OrganizationPage from './pages/ActivistSite/OrganizationPage';
 import VPN from './pages/VPN/VPNPage';
 import SimpleNewSite from './pages/SimpleNewsSite';
-import PokiToki from './pages/PokiToki';
+import PokiToki from './pages/PokiToki/PokiToki';
 import Arcade from './pages/Arcade/Arcade';
 
 

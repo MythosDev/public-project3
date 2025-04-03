@@ -84,8 +84,8 @@ export default function () {
 
     return (
         <>
-        <div className="rootStyles">
-        <Gate />
+        <div className="justify-center w-[720px] mx-auto">
+            <Gate />
             <Link to="/Home">Home</Link>
             <br />
             <br />
