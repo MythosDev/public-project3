@@ -36,18 +36,18 @@ const styles = {
     justifyContent: "center",
     gap: "16px",
     padding: "16px",
-    maxHeight: "400px",  // Set max height for the row
-    overflowY: "auto",   // Adds vertical scrolling if content exceeds max height
+    maxHeight: "400px",
+    overflowY: "auto",
   },
   movie: {
-    minWidth: "150px",
+    width: "350px",
     textAlign: "center",
   },
   poster: {
-    width: "100%",
-    maxHeight: "150px", // Set max height for posters to maintain proportions
+    width: "350px",      // Fixed width
+    height: "150px",     // Same height as width for a square
     borderRadius: "8px",
-    objectFit: "cover", // Ensures images cover the area without distortion
+    objectFit: "fill",   // Stretch the image to fit the box
   },
   title: {
     marginTop: "8px",

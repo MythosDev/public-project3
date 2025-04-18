@@ -5,7 +5,6 @@ import { FaInstagram, FaFacebook, FaGoogle } from "react-icons/fa";
 
 const PokiTokiHomePage = () => {
   return (
-    <MobileScreen>
       <div className="flex flex-col items-center justify-center h-full bg-gradient-to-b from-blue-900 to-purple-700 p-6">
         {/* Logo */}
         <img src={PokiTokiLogo} alt="Poki Toki Logo" className="w-40 mb-6" />
@@ -27,7 +26,6 @@ const PokiTokiHomePage = () => {
           </a>
         </div>
       </div>
-    </MobileScreen>
   );
 };
 

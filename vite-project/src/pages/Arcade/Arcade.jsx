@@ -66,8 +66,6 @@ export default function () {
                     <GeoMap />
                 </div>
                 <br />
-                <EmailBox/>
-                <PersonalCard />
                 <div className='flex w-[500px] rounded-xl bg-slate-500 p-4 m-4 justify-around'>
                     <SkillGrid skills={Skills} />
                 </div>

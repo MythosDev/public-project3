@@ -28,7 +28,7 @@ import VPN from './pages/VPN/VPNPage';
 import SimpleNewSite from './pages/SimpleNewsSite';
 import PokiToki from './pages/PokiToki/PokiToki';
 import Arcade from './pages/Arcade/Arcade';
-
+import MovieSite from './pages/MovieSite';
 
 function App() {
 
@@ -60,6 +60,7 @@ function App() {
           <Route path='/SimpleNews' element={<SimpleNewSite />}/>
           <Route path='/PokiToki' element={<PokiToki />}/>
           <Route path='/Arcade' element={<Arcade/>}/>
+          <Route path='/MoviesSecond' element={<MovieSite />}/>
         </Routes>
       </BrowserRouter>
     </>

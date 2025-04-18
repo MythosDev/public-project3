@@ -28,15 +28,23 @@ export default function () {
                 <br />
                 <Link to="/SM">SM</Link>
                 <br />
+                <Link to="/Eighties">Eighties</Link>
+                <br />
                 <Link to="/Property">Property</Link>
                 <br />
                 <Link to="/VPN">Atlas VPN</Link>
+                <br />
+                <Link to="/Org">Org</Link>
                 <br />
                 <Link to="/SimpleNews">Sim News</Link>
                 <br />
                 <Link to="/PokiToki">PokiToki</Link>
                 <br />
                 <Link to="/Arcade">Arcade</Link>
+                <br />
+                <Link to="/Movies">Movies</Link>
+                <br />
+                <Link to="/MoviesSecond">Movies Second</Link>
             </div>
 
         </>

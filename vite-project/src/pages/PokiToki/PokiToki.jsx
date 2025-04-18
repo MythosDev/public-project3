@@ -8,6 +8,11 @@ import AssetBrowser from './AssetBrowser';
 import PokiTokiHomePage from './PokiTokiHomePage';
 import AccountScreen from './AccountScreen';
 import GameScreen from './GameScreen';
+import PaymentPage from '../../components/PaymentPage';
+import QRCodeComponent from '../../components/QRCodeComponent';
+import CryptoPayment from '../../components/CryptoPayment';
+import AccountList from './AccountList';
+import TextChatPage from './TextChat/TextChatPage';
 
 
 function Card ({ name, description, img = "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"}) {
@@ -248,6 +253,10 @@ export default function () {
                     </li>
                 </Subscription>
                 </div>
+                <div className='flex flex-row gap-8'>
+                    <PaymentPage />
+                    <CryptoPayment />
+                </div>
                 {/* <div className='bg-slate-400 w-[1080px] h-[1080px]'> */}
                     <ChartComponent type="line" data={chart_data} options={options} />
                 {/* </div> */}
@@ -259,6 +268,9 @@ export default function () {
                     <ChatInput />
                     <Discover />
                     <AssetBrowser />
+                    <QRCodeComponent url="https://www.reddit.com/r/CoinBase/comments/1gtch4n/best_crypto_to_buy_right_now/"/>
+                    <AccountList />
+                    <TextChatPage />
                 </MobileScreen>
 
                 <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
