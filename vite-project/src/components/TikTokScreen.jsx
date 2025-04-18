@@ -5,7 +5,7 @@ import TikTokComments from "./TikTokComments";
 const videos = [
   {
     id: 1,
-    src: "/Candela Gallo (German-Argentinian 🇩🇪🇦🇷).mp4",
+    src: "/Candela Gallo (German-Argentinian).mp4",
     likes: 120,
     comments: ["Awesome!", "Nice video!"],
   },
