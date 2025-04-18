@@ -41,10 +41,10 @@ const PersonalCard = ({ screenImage = Default_Picture }) => {
       <div className="mt-4 w-full">
         <div className="flex justify-between items-center">
           <div className="text-black text-md">
-            <span className="font-bold">Email:</span> wbusch866@gmail.com
+            <span className="font-bold">Email:</span> nobody@gmail.com
           </div>
           <button
-            onClick={() => copyToClipboard('wbusch866@gmail.com', 'email')}
+            onClick={() => copyToClipboard('nobody@gmail.com', 'email')}
             className="p-2 bg-gray-200 rounded-md hover:bg-gray-300 focus:outline-none"
           >
             <FaCopy />
@@ -56,10 +56,10 @@ const PersonalCard = ({ screenImage = Default_Picture }) => {
       <div className="mt-2 w-full">
         <div className="flex justify-between items-center">
           <div className="text-black text-md">
-            <span className="font-bold">Phone:</span> 250-507-4549
+            <span className="font-bold">Phone:</span> 190-909-9999
           </div>
           <button
-            onClick={() => copyToClipboard('250-507-4549', 'phone')}
+            onClick={() => copyToClipboard('190-909-9999', 'phone')}
             className="p-2 bg-gray-200 rounded-md hover:bg-gray-300 focus:outline-none"
           >
             <FaCopy />
@@ -79,7 +79,7 @@ const PersonalCard = ({ screenImage = Default_Picture }) => {
           <FaGithub size={24} />
         </a>
         <a
-          href="https://x.com/Amica_Nemo"
+          href="https://x.com"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-blue-400 text-white p-3 rounded-full hover:bg-blue-500"

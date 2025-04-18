@@ -6,7 +6,7 @@ const GlobeComponent = () => {
   const containerRef = useRef(null);
 
   useEffect(() => {
-    Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIwYmFjNDIyMC1lNGMzLTRkNGYtYjhhYi04MzI4MjZlZGMzNjQiLCJpZCI6Mjg4NTQ3LCJpYXQiOjE3NDMyOTEzMjR9.HXclxdv7pjmxZ1GlDeEoW8YxDReLyz3TN_Tab2h2YT0';
+    Cesium.Ion.defaultAccessToken = '';
 
     if (containerRef.current) {
       const viewer = new Cesium.Viewer(containerRef.current, {

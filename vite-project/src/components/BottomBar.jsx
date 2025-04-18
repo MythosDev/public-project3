@@ -18,10 +18,10 @@ export default function BottomBar() {
     }}>
       <NavItem icon="🏠" label="Home" />
       <NavItem icon="🔍" label="Search" />
-      <NavItem label="Armikos@gmail.com" />
+      <NavItem label="Nobody@gmail.com" />
       <NavItem label="108-931-2227" />
       <NavItem label="MythosCorp. 2025" />
-      <NavItem label="William Busch" />
+      <NavItem label="Captain Nobody" />
     </div>
   );
 }

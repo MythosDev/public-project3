@@ -11,14 +11,13 @@ import Contacts from './pages/Contacts'
 import About from './pages/About'
 import NoPage from './pages/NoPage'
 import Test from './pages/Test'
-import Areus from './pages/Areus';
+import UndergroundNews from './pages/UndergroundNews';
 import Resume from './pages/Resume';
 import Statistica from './pages/Statistica';
 import NewsPage from './pages/NewsPage';
 import EarthPage from './pages/EarthPage';
 import EightiesPage from './pages/EightiesPage';
 import AnatomyPage from './pages/AnatomyPage';
-import Simple_mobile from './simple_mobile/SM_Page';
 import RetroGamePage from './pages/RetroGamePage';
 import TiktokClone from './pages/TiktokClone';
 import MoviePage from './pages/MoviePage';
@@ -42,7 +41,7 @@ function App() {
           <Route path='/Portfolio' element={<Portfolio/>}/>
           <Route path='/Contacts' element={<Contacts/>}/>
           <Route path='/About' element={<About/>}/>
-          <Route path='/Areus' element={<Areus/>}/>
+          <Route path='/UndergroundNews' element={<UndergroundNews/>}/>
           <Route path='/Resume' element={<Resume/>}/>
           <Route path='/Test' element={<Test/>}/>
           <Route path='/Statistica' element={<Statistica/>}/>
@@ -50,7 +49,6 @@ function App() {
           <Route path='/Earth' element={<EarthPage/>}/>
           <Route path='/Man' element={<AnatomyPage/>}/>
           <Route path='/Eighties' element={<EightiesPage/>}/>
-          <Route path='/SM' element={<Simple_mobile/>}/>
           <Route path='/Retro' element={<RetroGamePage/>}/>
           <Route path='/Tiktok' element={<TiktokClone/>}/>
           <Route path='/Movies' element={<MoviePage/>}/>

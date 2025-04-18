@@ -15,7 +15,7 @@ export default function SocialMediaLinks() {
                 <FaGithub size={24} />
             </a>
             <a
-                href="https://x.com/Amica_Nemo"
+                href="https://x.com/home"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-blue-400 text-white p-3 rounded-full hover:bg-blue-500"

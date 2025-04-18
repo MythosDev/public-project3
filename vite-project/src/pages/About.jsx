@@ -75,8 +75,8 @@ export default function () {
                     <img src={demoPic} alt="" style={styles.img}/>
                 </div>
                 <h2>About Me</h2>
-                <p>My name is <b>William Busch</b></p>
-                <p>I am from Vancouver British Columbia</p>
+                <p>My name is <b>Nobody</b></p>
+                <p>I am from <b>somewhere</b></p>
                 <div style={{width: '500px', margin: 'auto', textAlign: 'justify'}}>
                     <p>
                         I have always had a passion for art.

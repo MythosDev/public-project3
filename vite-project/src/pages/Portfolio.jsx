@@ -1,18 +1,13 @@
 import { Link } from 'react-router-dom';
-
-import Grid from "../components/Grid";
 import '../Global.module.css'
-import PortfolioPersonalCard from '../components/PortfolioPersonalCard';
 
 export default function () {
     return(
         <>
             <div className="rootStyles">
                 <h2>Portfolio Page</h2>
-                <p>Hi my name is William Busch</p>
+                <p>Hi my name is XXXX XXXXX</p>
                 <Link to="/Home">Home</Link>
-                <PortfolioPersonalCard />
-                <Grid />
             </div>
 
         </>

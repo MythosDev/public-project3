@@ -12,7 +12,7 @@ const NewsPage = () => {
 
       <div className="TopArticle">
           <div className="Row Title"></div>
-          <h1>Revolutions in Georgia</h1>
+          <h1>XXXXXjdkfgkglfjdgfdkjl</h1>
           <div className="row info">
             <p>19, May, 2024</p>
             <p>Montana, USA</p>

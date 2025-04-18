@@ -1,14 +1,14 @@
 import React from "react";
-import Ad1 from "../assets/AdAreusPress.png"
-import Ad2 from "../assets/StrengthUnity.png"
+import Ad1 from "/Ad1.jpg"
+import Ad2 from "/Ad1.jpg"
 import BannerImage from "../assets/BannerImage.png"
 
 const NewsRow = () => {
   return (
     <div className="newrow-container">
-      <img src={Ad1} className="ad" alt="Left Ad" />
+      <img src={"/Ad1.jpg"} className="ad" alt="Left Ad" />
       
-      <img src={BannerImage} className="banner" alt="Banner" />
+      <img src={Ad2} className="banner" alt="Banner" />
       
       <img src={Ad2} className="ad" alt="Right Ad" />
 

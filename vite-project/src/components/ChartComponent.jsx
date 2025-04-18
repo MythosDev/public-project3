@@ -44,7 +44,11 @@ const ChartComponent = ({ type = "line", data, options }) => {
     }
   };
 
-  return <div style={{ minWidth: "600px", margin: "20px auto" }}>{renderChart()}</div>;
+  return (
+    <div style={{ minWidth: "600px", margin: "20px auto" }}>
+      {renderChart()}
+    </div>
+  );
 };
 
 export default ChartComponent;

@@ -176,12 +176,12 @@ export default function () {
                 <div className="badge badge-success">Success</div>
                 <div className="badge badge-warning">Warning</div>
                 <div className="badge badge-error">Error</div>
-                <div className='flex flex-row gap-8'>
+                <div className='flex flex-col md:flex-row gap-8'>
                     <Card name="Arcade" description="Play Game" />
                     <Card name="Poster" />
                     <Card name="Jacket" />
                 </div>
-                <div className='flex flex-row gap-8'>
+                <div className='flex flex-col md:flex-row gap-8'>
                 <Subscription name='basic' tagType='badge-success' tag='lowest price' price='5$/mo'>
                     <li>
                         <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
@@ -253,8 +253,9 @@ export default function () {
                     </li>
                 </Subscription>
                 </div>
-                <div className='flex flex-row gap-8'>
+                <div className='flex flex-col gap-8'>
                     <PaymentPage />
+                    <br />
                     <CryptoPayment />
                 </div>
                 {/* <div className='bg-slate-400 w-[1080px] h-[1080px]'> */}
